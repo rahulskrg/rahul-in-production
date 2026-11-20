@@ -1,0 +1,41 @@
+﻿:root {
+  color-scheme: light;
+  --paper: #f8f7ef;
+  --surface: #f0efe3;
+  --citron: #e9efcf;
+  --ink: #18251b;
+  --muted: #4c5944;
+  --green: #356448;
+  --green-hover: #254b35;
+  --lime: #dcf596;
+  --forest: #172b21;
+  --forest-raised: #213a2d;
+  --forest-ink: #f7faea;
+  --forest-muted: #c5d6bf;
+  --forest-line: #607a67;
+  --line: #c9cdb9;
+  --focus: var(--green);
+
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --display-weight: 650;
+  --display-tracking: -0.04em;
+  --t-h2: clamp(2.625rem, 5.35vw, 5.25rem);
+
+  --width: 77rem;
+  --gutter: clamp(1.125rem, 5vw, 4.5rem);
+  --gap: clamp(1.5rem, 4.5vw, 4.5rem);
+  --section-space: clamp(4rem, 9vw, 8rem);
+  --header-height: 4.5rem;
+  --radius: 1rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --quick: 180ms;
+
+  /* The two local motion modules inherit these from their host sections. */
+  --bg: var(--paper);
+  --accent: var(--green);
+}
+
+@media (max-width: 42rem) {
+  :root { --header-height: 6.25rem; }
+}
