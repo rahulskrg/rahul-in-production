@@ -1,41 +1,56 @@
 ﻿:root {
-  color-scheme: light;
-  --paper: #f8f7ef;
-  --surface: #f0efe3;
-  --citron: #e9efcf;
-  --ink: #18251b;
-  --muted: #4c5944;
-  --green: #356448;
-  --green-hover: #254b35;
-  --lime: #dcf596;
-  --forest: #172b21;
-  --forest-raised: #213a2d;
-  --forest-ink: #f7faea;
-  --forest-muted: #c5d6bf;
-  --forest-line: #607a67;
-  --line: #c9cdb9;
-  --focus: var(--green);
-
-  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
-  --display-weight: 650;
-  --display-tracking: -0.04em;
-  --t-h2: clamp(2.625rem, 5.35vw, 5.25rem);
-
-  --width: 77rem;
+  color-scheme: dark;
+  --color-paper: oklch(13.2% 0.022 258);
+  --color-paper-2: oklch(16.4% 0.024 258);
+  --color-paper-3: oklch(20% 0.023 258);
+  --color-ink: oklch(93.5% 0.012 85);
+  --color-ink-2: oklch(84% 0.013 255);
+  --color-muted: oklch(72% 0.02 255);
+  --color-rule: oklch(29% 0.02 255);
+  --color-accent: oklch(82% 0.095 68);
+  --color-accent-hi: oklch(89% 0.085 73);
+  --color-accent-base: oklch(75% 0.102 64);
+  --color-accent-soft: oklch(32% 0.032 61);
+  --color-accent-ink: oklch(20% 0.03 62);
+  --color-focus: var(--color-accent);
+  --color-band: oklch(17.5% 0.026 258);
+  --color-band-ink: var(--color-ink);
+  --color-band-muted: var(--color-muted);
+  --color-band-rule: var(--color-rule);
+  --color-night: oklch(20% 0.045 250);
+  --color-horizon: oklch(58% 0.073 245);
+  --color-well: oklch(11.5% 0.02 258);
+  --color-panel-top: oklch(23% 0.025 254);
+  --color-panel-bottom: oklch(16% 0.023 256);
+  --metal-hi: oklch(44% 0.012 255);
+  --metal-lo: oklch(25% 0.014 255);
+  --metal-grip: oklch(32% 0.017 255);
+  --edge-light: inset 0 1px 0 oklch(95% 0.01 85 / 0.12);
+  --shadow-part: 0 3px 5px -2px oklch(6% 0.01 258 / 0.75);
+  --shadow-panel: 0 28px 64px -36px oklch(6% 0.012 258 / 0.94);
+  --shadow-well: inset 0 1px 5px oklch(7% 0.012 258 / 0.8);
+  --font-display: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.036em;
+  --t-h2: clamp(2.625rem, 5vw, 4.875rem);
+  --width: 82rem;
   --gutter: clamp(1.125rem, 5vw, 4.5rem);
-  --gap: clamp(1.5rem, 4.5vw, 4.5rem);
-  --section-space: clamp(4rem, 9vw, 8rem);
+  --gap: clamp(1.5rem, 5.4vw, 5rem);
+  --section-space: clamp(4.25rem, 8.6vw, 8.25rem);
   --header-height: 4.5rem;
-  --radius: 1rem;
+  --radius-card: 20px;
+  --radius-part: 8px;
+  --radius-pill: 999px;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --quick: 180ms;
 
-  /* The two local motion modules inherit these from their host sections. */
-  --bg: var(--paper);
-  --accent: var(--green);
+  /* Used by the local word-highlight and photo effects. */
+  --bg: var(--color-paper);
+  --ink: var(--color-ink);
+  --accent: var(--color-ink);
 }
 
 @media (max-width: 42rem) {
-  :root { --header-height: 6.25rem; }
+  :root { --header-height: 6.125rem; }
 }

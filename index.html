@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="page-type" content="service">
   <meta name="site-kind" content="other">
-  <meta name="theme-color" content="#e9efcf">
+  <meta name="theme-color" content="#080c15">
   <title>Rahul S | Lead Data Scientist</title>
-  <meta name="description" content="Rahul S is a Lead Data Scientist at USEReady in Bengaluru. Explore six projects in AI agents, enterprise search, retrieval-augmented generation, and machine learning.">
+  <meta name="description" content="Rahul S is a Lead Data Scientist at USEReady in Bengaluru. He helps businesses solve practical problems with generative AI and machine learning.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rahul S | Lead Data Scientist">
   <meta property="og:description" content="Six projects spanning AI agents, document question answering, enterprise search, broadcast anomaly detection, and data extraction.">
@@ -16,7 +16,7 @@
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..600&amp;family=Instrument+Sans:wght@400..600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./motion.css">
   <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
@@ -28,54 +28,89 @@
   <script type="module" src="./assets/motion/motion.js"></script>
   <script type="module" src="./assets/moments/moments.js"></script>
   <script type="module" src="./portfolio.js"></script>
+  <script type="module" src="./assets/ribbon-light.js"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-layout">
-      <a class="wordmark" href="#top" aria-label="Rahul S, home">Rahul S<span aria-hidden="true">.</span></a>
+      <a class="wordmark" href="#top" aria-label="Rahul S, home">Rahul S</a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#background">About</a>
         <a href="#recognition">Awards</a>
       </nav>
-      <a class="header-contact" href="#contact">Contact <span class="arrow arrow-diagonal" aria-hidden="true"></span></a>
+      <a class="header-contact" href="#contact">Contact</a>
     </div>
     <div class="page-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="hero-heading" data-enter>
+      <canvas class="hero-light" aria-hidden="true" hidden></canvas>
       <div class="wrap hero-layout">
-        <h1 id="hero-heading" data-enter-whole>I build <em>AI systems.</em></h1>
-        <div class="hero-intro">
-          <p>I'm <strong>Rahul S, a Lead Data Scientist at USEReady</strong> in Bengaluru. I build AI agents, enterprise search systems, and applications that answer questions using source documents.</p>
-          <a class="button btn" href="#work">Explore my work <span class="arrow arrow-down" aria-hidden="true"></span></a>
+        <div class="hero-copy">
+          <h1 id="hero-heading" data-enter-whole>Rahul S</h1>
+          <p class="hero-role">Lead Data Scientist at USEReady, Bengaluru</p>
+          <p class="hero-summary">I help businesses across industries solve practical problems with generative AI and machine learning. I work with large language models and AI agents, drawing on my experience in Python, statistics, and software development.</p>
+          <a class="button btn" href="#work">Explore my work</a>
         </div>
-        <figure class="hero-photo" data-enter-media data-visual>
+
+        <figure class="hero-portrait" data-enter-media data-visual>
           <img src="./assets/rahul-portrait.webp" alt="Portrait of Rahul S" width="960" height="1056" fetchpriority="high" data-source="client">
         </figure>
       </div>
     </section>
 
     <section class="work section" id="work" aria-labelledby="work-heading">
-      <div class="wrap">
+      <div class="wrap work-layout">
         <div class="section-header">
           <h2 id="work-heading">Selected work</h2>
-          <p>Six projects spanning product recommendations, enterprise search, broadcast monitoring, and extracting data from charts and documents.</p>
+          <p>Projects in AI agents, enterprise search, broadcast monitoring, and data extraction.</p>
+
+          <div class="workbench" data-visual>
+            <h2 class="instrument-heading">Project browser</h2>
+            <div class="instrument-deck">
+              <div class="instrument-fader" hidden>
+                <input id="work-selector" type="range" min="0" max="2" step="1" value="0" aria-label="Project topic" aria-orientation="vertical" aria-valuetext="AI agents" aria-controls="project-preview">
+              </div>
+              <div class="instrument-readout" id="project-preview">
+                <h3>Multi-agent product recommendations</h3>
+                <p>Customer-facing agents for a specialty materials manufacturer.</p>
+                <a class="instrument-action" href="#project-agents">Read project</a>
+              </div>
+            </div>
+            <nav class="workbench-links" aria-label="Explore work by topic">
+              <a href="#project-agents">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
+                AI agents
+              </a>
+              <a href="#project-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><circle cx="11.5" cy="14.5" r="2.5"/><path d="m13.3 16.3 1.7 1.7"/></svg>
+                Search
+              </a>
+              <a href="#project-anomalies">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Monitoring
+              </a>
+            </nav>
+          </div>
         </div>
 
-        <article class="featured" id="project-rag" aria-labelledby="rag-heading">
-          <h3 id="rag-heading">Question answering with RAG</h3>
-          <div class="featured-copy">
+        <div class="projects">
+          <details id="project-rag" name="projects">
+            <summary>
+              <span class="project-heading">
+                <span class="project-name" id="rag-heading">Question answering with RAG</span>
+                <span class="project-summary">Applications that answer questions using relevant passages from source documents.</span>
+              </span>
+              <span class="project-company">USEReady</span>
+              <span class="project-toggle" aria-hidden="true"></span>
+            </summary>
             <p>I built retrieval-augmented generation (RAG) applications for several clients. They find relevant passages in source documents and use those passages to give a language model context for its answer.</p>
             <p>My work covered preparing the data, building the retrieval and generation steps, and developing agents. I also worked on observability and evaluation to track how the applications behaved in production and assess the answers they returned.</p>
-            <p class="organization-label">USEReady</p>
-          </div>
-        </article>
-
-        <section class="projects" aria-label="More projects">
+          </details>
           <details id="project-agents" name="projects">
             <summary>
               <span class="project-heading">
@@ -96,7 +131,7 @@
               <span class="project-company">USEReady</span>
               <span class="project-toggle" aria-hidden="true"></span>
             </summary>
-            <p>I designed and implemented the client's enterprise search solution. Elasticsearch provided the search layer, and I applied language model fine-tuning as part of the work to improve information retrieval.</p>
+            <p>I designed and implemented the client’s enterprise search solution. Elasticsearch provided the search layer, and I applied language model fine-tuning as part of the work to improve information retrieval.</p>
           </details>
           <details id="project-anomalies" name="projects">
             <summary>
@@ -129,9 +164,9 @@
               <span class="project-company">Marlabs</span>
               <span class="project-toggle" aria-hidden="true"></span>
             </summary>
-            <p>I used Scrapy to collect page content from the three sites and stored the collected data in Snowflake. Keeping each day's content made it possible to compare it with the previous day's version and see where the pages had changed.</p>
+            <p>I used Scrapy to collect page content from the three sites and stored the collected data in Snowflake. Keeping each day’s content made it possible to compare it with the previous day’s version and see where the pages had changed.</p>
           </details>
-        </section>
+        </div>
       </div>
     </section>
 
@@ -180,8 +215,16 @@
 
     <section class="background section" id="background" aria-labelledby="background-heading">
       <div class="wrap">
-        <h2 id="background-heading">Technical background</h2>
-        <p class="background-statement mo-wh__text" data-moment="word-highlight" data-moment-opts='{"from":0.92,"to":0.61}'>My work has moved from <strong>designing industrial controls</strong> to building data pipelines, search systems, and AI applications.</p>
+        <div class="about-intro">
+          <div>
+            <h2 id="background-heading">About me</h2>
+            <p class="background-statement mo-wh__text" data-moment="word-highlight" data-moment-opts='{"from":0.92,"to":0.61}'>I enjoy working with people to understand the problem they’re trying to solve, then <strong>building a solution they can use.</strong></p>
+          </div>
+          <div class="about-approach">
+            <p>I bring curiosity, structure, and attention to detail to that work.</p>
+            <p>My work has moved from designing industrial controls to building data pipelines, search systems, and AI applications.</p>
+          </div>
+        </div>
         <div class="background-grid">
           <div>
             <h3>Technical expertise</h3>
@@ -195,7 +238,7 @@
             <h3>Education and certificates</h3>
             <ul class="background-list">
               <li><strong>Postgraduate Diploma in Data Science</strong><span>Great Lakes Institute of Management, 2018</span></li>
-              <li><strong>B.Tech in Electrical and Electronics Engineering</strong><span>University College of Engineering, Thodupuzha, 2010–2014</span></li>
+              <li><strong>B.Tech in Electrical and Electronics Engineering</strong><span>University College of Engineering, Thodupuzha, 2010 to 2014</span></li>
               <li><strong>Certificates</strong><span>Generative AI Automation and Prompt Engineering</span></li>
             </ul>
           </div>
@@ -224,11 +267,11 @@
       <div class="wrap contact-layout">
         <div>
           <h2 id="contact-heading">Get in touch.</h2>
-          <p>If you're working on an AI agent, a search system, or a machine learning pipeline, I'd like to hear what you're building and where I might help.</p>
+          <p>If you’re working on an AI agent, a search system, or a machine learning pipeline, I’d like to hear what you’re building and where I might help.</p>
         </div>
         <div class="contact-actions">
-          <a class="button btn" href="mailto:rahulskrg@gmail.com">Email Rahul <span class="arrow arrow-diagonal" aria-hidden="true"></span></a>
-          <a class="contact-link" href="https://www.linkedin.com/in/rahul-s-8392954b/">Connect on LinkedIn <span class="arrow arrow-diagonal" aria-hidden="true"></span></a>
+          <a class="button btn" href="mailto:rahulskrg@gmail.com">Email Rahul</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/rahul-s-8392954b/">Connect on LinkedIn</a>
         </div>
       </div>
     </section>
@@ -237,7 +280,10 @@
   <footer class="site-footer">
     <div class="wrap footer-layout">
       <p><strong>Rahul S</strong><span>Bengaluru, India</span></p>
-      <a href="#top">Back to top <span class="arrow arrow-up" aria-hidden="true"></span></a>
+      <a href="#top">Back to top</a>
+    </div>
+    <div class="wrap image-credits">
+      <a href="https://lucide.dev/">Lucide</a> icons, <a href="./assets/lucide-license.txt">ISC license</a>.
     </div>
   </footer>
 </body>
